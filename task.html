@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="./task.js"></script>
+<link rel="stylesheet" href="task.css">
+
+<html>
+<header>
+<h1 style="font-size:80px;"> We Just Out Here Cooking!! </h1>
+</header>
+
+  
+<br>
+<BODY BGCOLOR=#f5f5f5 TEXT="#313030" class=center>
+
+<img src=https://media3.giphy.com/media/CNocEFcF9IBegtgW3q/giphy.gif?cid=ecf05e47hqoz7g438ngmjob9k717z5m6irwloaz6ocm3e7ck&rid=giphy.gif&ct=g alt="cooking">
+<br>
+<p1> &#128293 We Just Out Here Cooking &#128293 </p1> 
+<br>
+<br>
+<br>
+<p3>  Now get lost. </p3>   
+
+<h2>Time and Date</h2>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<br>
+<p id="demo"></p>
+
+    <div id="app-7">
+        <ol>
+
+          <todo-item
+            v-for="item in groceryList"
+            v-bind:todo="item"
+            v-bind:key="item.id"
+          ></todo-item>
+        </ol>
+      </div>
+
+
+</BODY>
+
+<footer>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="./task.js"></script>
+</html>
+  
